@@ -23,11 +23,11 @@ if __name__=='__main__':
     print(os.getcwd())
     makedir('Results')
     createfile('test_11')
-    
+    os.chdir('../')
     date=str(datetime.datetime.now())
     date=date.split()
     date='_'.join(date)
-    os.rename('Results','Results'+date)
+    os.rename('Results','Results_'+date)
     print('Success..!!!')
     
     
