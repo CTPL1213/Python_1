@@ -17,6 +17,7 @@ def createfile(file_name):
     with open(os.path.join(os.getcwd(),file_name+'.txt'),'w'):
         pass
 if __name__=='__main__':
+    print(os.getcwd())
     makedir('Results')
     createfile('test_11')
     print('Python')
