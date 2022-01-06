@@ -1,5 +1,6 @@
 import os
 import datetime
+os.chdir('/home/tuser/Desktop/')
 def makedir(dir_name):
     if os.path.isdir(dir_name):
         os.chdir(os.path.join(os.getcwd(),dir_name))
