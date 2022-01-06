@@ -1,7 +1,7 @@
 import os
 import datetime
 import sys
-os.chdir('/home')
+
 def makedir(dir_name):
     if os.path.isdir(dir_name):
         os.chdir(os.path.join(os.getcwd(),dir_name))
@@ -18,9 +18,16 @@ def createfile(file_name):
     file_name+=date
     with open(os.path.join(os.getcwd(),file_name+'.txt'),'w'):
         pass
+
 if __name__=='__main__':
     print(os.getcwd())
     makedir('Results')
     createfile('test_11')
-    print('Python')
-    print(os.listdir())
+    
+    date=str(datetime.datetime.now())
+    date=date.split()
+    date='_'.join(date)
+    os.rename('Results','Results'+date)
+    print('Success..!!!')
+    
+    
