@@ -28,7 +28,7 @@ if __name__=='__main__':
     date=date.split()
     date='_'.join(date)
     os.rename('Results','Results_'+date)
-    os.system('cp -R /var/lib/jenkins/workspace/Demo/Results_2022-01-06_16\:51\:47.820563/  /home/tuser/Desktop/Results')
+    os.system('cp -R /var/lib/jenkins/workspace/Demo/  /home/tuser/Desktop/Results')
     print('Success..!!!')
     
     
